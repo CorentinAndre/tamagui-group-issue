@@ -61,6 +61,9 @@ export const config = createTamagui({
     heading: headingFont,
   },
   themes,
+  settings: {
+    webContainerType: 'normal',
+  },
   tokens,
   media: createMedia({
     xs: { maxWidth: 660 },

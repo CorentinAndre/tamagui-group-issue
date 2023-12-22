@@ -48,14 +48,10 @@ export function HomeScreen() {
         </Paragraph>
       </YStack>
 
-      <XStack group="working" focusable pressStyle={{
+      <XStack group="myCustomGroup" focusable pressStyle={{
         backgroundColor: '$backgroundPress'
-      }} onPress={() => {console.log('working')}}>
-        <Text  $group-working-hover={{color: '$blue10'}} $group-working-press={{color: 'red'}}>This is working but press should have priority over hover ?</Text>
-      </XStack>
-
-      <XStack group="not-working" focusable onPress={() => {console.log('not-working')}}>
-        <Text $group-not-working-press={{color: '$blue10Light'}} $group-not-working-hover={{borderWidth: 1, borderStyle: 'solid', borderColor: 'red'}}>This is not working</Text>
+      }} onPress={() => {console.log('myCustomGroup')}}>
+        <Text $group-myCustomGroup-press={{color: 'red'}}>This is myCustomGroup but press should have priority over hover ?</Text>
       </XStack>
 
       <SheetDemo />

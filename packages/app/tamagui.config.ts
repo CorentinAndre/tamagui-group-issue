@@ -7,7 +7,7 @@ declare module 'tamagui' {
   }
 
   interface TypeOverride {
-    groupNames(): 'working' | 'not-working'
+    groupNames(): 'myCustomGroup'
   }
 }
 
